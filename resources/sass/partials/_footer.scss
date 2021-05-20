@@ -1,0 +1,13 @@
+footer {
+    .container-fluid {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 5px;
+
+        #powered_footer {
+            color: black;
+        }
+    }
+
+
+}

@@ -1,0 +1,43 @@
+#header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #4483E3;
+
+    .container {
+        display: flex;
+
+        #header_left {
+            display: flex;
+            align-items: center;
+            width: 50%;
+
+            img {
+                width: 150px;
+            }
+        }
+        #header_right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 50%;
+
+            ul {
+                li {
+                    font-weight: bold;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+                li:first-child {
+                    border-right: 1px solid white;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
