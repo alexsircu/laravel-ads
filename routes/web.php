@@ -24,4 +24,3 @@ Route::get('/first', function () {
 Route::get('/second', function () {
     return view('second');
 });
-

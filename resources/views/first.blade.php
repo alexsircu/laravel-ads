@@ -10,6 +10,10 @@
 
 </head>
 <body>
+    <div id="app">
+
+    </div>
+
     <header id="header">
         <div class="container">
             <div id="header_left">
@@ -44,5 +48,7 @@
             <small id="powered_footer">powered by alexsircu</small>
         </div>
     </footer>
+
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>

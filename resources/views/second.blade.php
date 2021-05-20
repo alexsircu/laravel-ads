@@ -37,6 +37,10 @@
                 <p id="terms_conditions">Si applicano Termini e condizioni. L'offerta di 1 mese gratis non è disponibile per gli utenti che hanno già provato Spotify Premium.</p>
             </div>
         </div>
+
+        <div id="app">
+
+        </div>
     </main>
 
     <footer id="footer">
@@ -44,5 +48,7 @@
             <small id="powered_footer">powered by alexsircu</small>
         </div>
     </footer>
+
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
