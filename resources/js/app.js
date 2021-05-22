@@ -8,6 +8,7 @@ require('./bootstrap');
 
 import Vue from "vue";
 import App from "./App.vue";
+// import firstJs from "./firstJs";
 
 /**
  * The following block of code may be used to automatically register your

@@ -3,6 +3,9 @@
         <div id="modal_window">
             <div id="modal_header">
                 <img :src="logo" alt="">
+                <div id="close_icon_container" @click="closeModal">
+                    x
+                </div>
             </div>
             <div id="modal_body">
                 <div id="modal_price">
@@ -34,6 +37,13 @@ export default {
             type: String,
             required: false
         }
+    },
+    methods: {
+        closeModal() {
+            const modalWindowContainer = document.querySelector('#modal_window_container');
+            modalWindowContainer.style.display = 'none';
+            // self.$emit("closeModal");
+        }
     }
 }
 </script>
@@ -43,10 +53,10 @@ export default {
         position: fixed;
         top: 0;
         left: 0;
+        display: none;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.4);
-        //display: none;
         z-index: 1;
         color: black;
 
@@ -60,6 +70,7 @@ export default {
             border: 10px solid black;
 
             #modal_header {
+                position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -67,6 +78,22 @@ export default {
                 background-color: #1ED760;
                 img {
                     height: 60%;
+                }
+                #close_icon_container {
+                    position: absolute;
+                    top: -20px;
+                    right: -20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    font-size: 18px;
+                    font-weight: bold;
+                    background-color: white;
+                    color: #4483E3;
+                    cursor: pointer;
                 }
             }
             #modal_body {

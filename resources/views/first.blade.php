@@ -14,24 +14,6 @@
 
     </div>
 
-    <header id="header">
-        <div class="container">
-            <div id="header_left">
-                <img src="{{ asset('img/logo.png') }}" alt="logo spotify">
-            </div>
-            <div id="header_right">
-               <ul>
-                   <li>
-                       <a href="#">Cookie</a>
-                   </li>
-                   <li>
-                       <a href="#">Session</a>
-                   </li>
-               </ul>
-            </div>
-        </div>
-    </header>
-
     <main id="main">
         <div id="jumbotron">
             <div class="container">
